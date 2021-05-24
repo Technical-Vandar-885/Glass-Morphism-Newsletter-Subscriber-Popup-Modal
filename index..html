@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Morphism Newsletter Subscriber Popup</title>
+</head>
+<body>
+    <div class="subscribe">
+        <button onclick="Open();" id="subscribe">Subscribe</button>
+    </div>
+    <div id="window">
+        <div class="close">
+            <img src="close.svg" onclick="Open()" alt="">
+        </div>
+        <div class="content">
+            <img src="email.svg" alt="">
+            <h2>Subscribe Our Newsletter</h2>
+            <h4>Please Subscribe Our Newsletter<br> For Daily Tech Updates</h4>
+            <form action="">
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    function Open(){
+        const window=document.getElementById('window');
+        const button=document.getElementById('subscribe');
+        window.classList.toggle('active');
+        button.classList.toggle('button-active');
+
+    }
+</script>
+</html>

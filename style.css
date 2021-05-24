@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right bottom, #cc08cc, #0dbcf1);
+    display: grid;
+    place-items: center;
+}
+
+#window{
+    height: 65vh;
+    width: 23vw;
+    background: radial-gradient(rgba(0, 0, 0 ,0.05), rgba(255, 255, 255, 0.5));
+    box-shadow: 0 2px 4px #acaeaf;
+    border-radius: 5px;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.close img{
+    height: 25px;
+    float: right;
+    margin: 10px 15px;
+    cursor: pointer;
+}
+.content img{
+    width: 250px;
+    height: 150px;
+    margin: 15px 50px;
+}
+.content h2{
+    margin: 10px 25px;
+}
+.content h4{
+    text-align: center;
+    margin: 15px 0;
+}
+form input{
+    height: 40px;
+    width: 20vw;
+    border: none;
+    outline: none;
+    margin: 5px 25px;
+    font-size: 20px;
+    padding: 15px;
+    background: radial-gradient(rgba(0, 0, 0 ,0.05), rgba(255, 255, 255, 0.5));
+    box-shadow: 0 2px 4px #acaeaf;
+
+}
+form button{
+    margin: 10px 130px;
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    background: radial-gradient(rgba(0, 0, 0 ,0.05), rgba(255, 255, 255, 0.5));
+    outline: none;
+    border: none;
+    color: white;
+    box-shadow: 0 2px 3px #aeaeae;
+    font-weight: 650;
+}
+.subscribe button{
+    margin: 10px 130px;
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    background: radial-gradient(rgba(0, 0, 0 ,0.05), rgba(255, 255, 255, 0.5));
+    outline: none;
+    border: none;
+    color: white;
+    box-shadow: 0 2px 3px #aeaeae;
+    font-weight: 650;
+}
+
+#window.active{
+    top: 50%;
+    transition: 0.5;
+    visibility: visible;
+}
+#subscribe.button-active{
+    opacity: 0;
+}
